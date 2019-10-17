@@ -10,6 +10,9 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+        
+        startActivity(new Intent(TestActivity.this,MainActivity.class));
+        finish();
 
     }
 }
